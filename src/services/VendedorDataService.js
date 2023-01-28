@@ -5,3 +5,5 @@ class VendedorDataService {
         return http.get ('/vendedor/listar');
     }
 }
+
+export default new VendedorDataService();
