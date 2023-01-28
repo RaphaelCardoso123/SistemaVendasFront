@@ -5,32 +5,47 @@
         <table class="table table-striped">
             <thead>
                 <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
+                    <th scope="col">Id</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Login</th>
+                    <th scope="col">Ações</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Larry</td>
-                    <td>the Bird</td>
-                    <td>@twitter</td>
-                </tr>
+               <tr v-for="(vendedor, index) in vendedores" :key="index">
+                    <td>{{ vendedor, id }}</td>
+                    <td>{{ vendedor, nome }}</td>
+                    <td>{{ vendedor, login }}</td>
+                    <td>
+                        <button class="btn btn-success">Editar</button>
+                        <button class="btn btn-danger">Excluir</button>
+                    </td>
+               </tr>
             </tbody>
         </table>
     </div>
 </template>
+
+<script>
+import VendedorDataService from '../../services/VendedorDataService';
+
+export default {
+    data() {
+        return {
+            vendedores: []
+        }
+    },
+    methods: {
+        obterVendedores() {
+            VendedorDataService.listar()
+                .then(response => {
+                    this.vendedores = response.data;
+                });
+        }
+    },
+    mounted() {
+        this.obterVendedores();
+    }
+
+}
+</script>
