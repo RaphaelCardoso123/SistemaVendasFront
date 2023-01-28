@@ -13,9 +13,9 @@
             </thead>
             <tbody>
                <tr v-for="(vendedor, index) in vendedores" :key="index">
-                    <td>{{ vendedor, id }}</td>
-                    <td>{{ vendedor, nome }}</td>
-                    <td>{{ vendedor, login }}</td>
+                    <td>{{ vendedor. id }}</td>
+                    <td>{{ vendedor. nome }}</td>
+                    <td>{{ vendedor. login }}</td>
                     <td>
                         <button class="btn btn-success">Editar</button>
                         <button class="btn btn-danger">Excluir</button>
