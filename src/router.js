@@ -7,12 +7,12 @@ import Atualizar from "./components/vendedor/Atualizar.vue";
 
 const routes = [
     {
-        path: "/vendedor/listar",
-        component: ListarVendedor
-    },
-    {
         path: "/",
         component: TheWelcome
+    },
+    {
+        path: "/vendedor/listar",
+        component: ListarVendedor
     },
     {
         path: "/vendedor/cadastrar",
