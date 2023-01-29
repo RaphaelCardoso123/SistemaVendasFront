@@ -1,6 +1,7 @@
 import { createWebHistory, createRouter } from "vue-router";
 import ListarVendedor from "./components/vendedor/Listar.vue";
 import TheWelcome from "./components/TheWelcome.vue";
+import Cadastrar from "./components/vendedor/Cadastrar.vue";
 
 
 const routes = [
@@ -11,6 +12,10 @@ const routes = [
     {
         path: "/",
         component: TheWelcome
+    },
+    {
+        path: "/vendedor/cadastrar",
+        component: Cadastrar
     }
 ];
 const router = createRouter({
