@@ -16,6 +16,10 @@ class VendedorDataService {
     obterPorId(id) {
         return http.get(`/vendedor/${id}`)
     }
+
+    deletar(id) {
+        return http.delete(`/vendedor/${id}`)
+    }
 }
 
 export default new VendedorDataService();
