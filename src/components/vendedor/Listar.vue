@@ -18,7 +18,7 @@
                     <td>{{ vendedor. login }}</td>
                     <td>
                         <button class="btn btn-success" @click="editarVendedor(vendedor.id)">Editar</button>
-                        <button class="btn btn-danger">Excluir</button>
+                        <button class="btn btn-danger" @click="excluirVendedor(vendedor)">Excluir</button>
                     </td>
                </tr>
             </tbody>
@@ -47,7 +47,8 @@ export default {
         },
         async excluirVendedor(vendedor) {
             if (confirm(`Tem certeza que deseja excluir o vendedor ${vendedor.nome}?`)) {
-                
+                VendedorDataService.deletar(vendedor.id);
+                this.obterVendedores();
             }
         }
     },
