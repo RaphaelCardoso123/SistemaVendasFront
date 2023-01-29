@@ -44,6 +44,11 @@ export default {
         },
         editarVendedor(id) {
             this.$router.push('/vendedor/' + id);
+        },
+        async excluirVendedor(vendedor) {
+            if (confirm(`Tem certeza que deseja excluir o vendedor ${vendedor.nome}?`)) {
+                
+            }
         }
     },
     mounted() {
