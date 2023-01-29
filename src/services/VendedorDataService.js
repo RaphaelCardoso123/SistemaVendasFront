@@ -12,6 +12,10 @@ class VendedorDataService {
     atualizar(id, vendedor) {
         return http.put(`/vendedor/${id}`, vendedor);
     }
+
+    obterPorId(id) {
+        return http.get(`/vendedor/${id}`)
+    }
 }
 
 export default new VendedorDataService();
