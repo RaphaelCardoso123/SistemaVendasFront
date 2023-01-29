@@ -47,7 +47,7 @@ export default {
         },
         async excluirVendedor(vendedor) {
             if (confirm(`Tem certeza que deseja excluir o vendedor ${vendedor.nome}?`)) {
-                VendedorDataService.deletar(vendedor.id);
+                await VendedorDataService.deletar(vendedor.id);
                 this.obterVendedores();
             }
         }

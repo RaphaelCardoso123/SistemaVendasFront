@@ -17,8 +17,8 @@ class VendedorDataService {
         return http.get(`/vendedor/${id}`)
     }
 
-    deletar(id) {
-        return http.delete(`/vendedor/${id}`)
+    async deletar(id) {
+        return await http.delete(`/vendedor/${id}`)
     }
 }
 
