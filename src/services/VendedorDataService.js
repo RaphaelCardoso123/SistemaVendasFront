@@ -1,24 +1,25 @@
 import http from "../http-common";
 
 class VendedorDataService {
-    listar() {
-        return http.get ('/vendedor/listar');
-    }
-
-    cadastrar(vendedor) {
+    
+    cadastrar(vendedor) {      //CADASTRAR
         return http.post('/vendedor', vendedor);
     }
 
-    atualizar(id, vendedor) {
-        return http.put(`/vendedor/${id}`, vendedor);
-    }
-
-    obterPorId(id) {
+    obterPorId(id) {           //CONSULTAR
         return http.get(`/vendedor/${id}`)
     }
 
-    async deletar(id) {
+    atualizar(id, vendedor) {  //ATUALIZAR    
+        return http.put(`/vendedor/${id}`, vendedor);
+    } 
+
+    async deletar(id) {         //EXCLUIR
         return await http.delete(`/vendedor/${id}`)
+    }
+
+    listar() {                //LISTAR
+        return http.get ('/vendedor/listar');
     }
 }
 
