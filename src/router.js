@@ -21,7 +21,7 @@ const routes = [
         component: TheWelcome
     },
 
-//-----------------------------------
+
     {
         path: "/vendedor/listar",
         component: ListarVendedor
@@ -35,7 +35,7 @@ const routes = [
         component: Atualizar
     },
 
-//-----------------------------------
+
     {
         path: "/cliente/listar",
         component: ListarCliente
@@ -47,10 +47,10 @@ const routes = [
     {
         path: "/cliente/:id",
         component: AtualizarCliente
-    }
+    },
 
-//-----------------------------------
-    ,{
+
+    {
         path: "/servico/listar",
         component: ListarServico
     },
