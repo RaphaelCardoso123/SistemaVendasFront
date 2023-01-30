@@ -1,11 +1,9 @@
 <script setup>
-
 </script>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 
 <template>
-
   <div class="navbar">
 
     <div class="dropdown">
@@ -20,7 +18,19 @@
     </div>
   </div>
 
-  <router-view />
+
+  <div class="dropdown">
+      <button class="dropbtn">Cliente
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <router-link to="/cliente/listar">Listar</router-link>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+  </div>
+
+<router-view />
 
 </template>
 
