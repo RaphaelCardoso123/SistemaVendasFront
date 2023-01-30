@@ -10,15 +10,15 @@ class ServicoDataService {
         return http.get(`/servico/${id}`)
     }
     
-    atualizar(id, servico) {  //ATUALIZAR    
+    atualizar(id, servico) {   //ATUALIZAR    
         return http.put(`/servico/${id}`, servico);
     } 
     
-    async deletar(id) {         //EXCLUIR
+    async deletar(id) {        //EXCLUIR
         return await http.delete(`/servico/${id}`)
     }
     
-    listar() {                //LISTAR
+    listar() {                 //LISTAR
         return http.get ('/servico/listar');
     }
 }
