@@ -9,13 +9,19 @@ import ListarCliente from "./components/cliente/Listar.vue";
 import CadastrarCliente from "./components/cliente/Cadastrar.vue";
 import AtualizarCliente from "./components/cliente/Atualizar.vue";
 
+import ListarServico from "./components/servico/Listar.vue";
+import CadastrarServico from "./components/servico/Cadastrar.vue";
+import AtualizarServico from "./components/servico/Atualizar.vue";
+
+
+
 const routes = [
     {
         path: "/",
         component: TheWelcome
     },
 
-
+//-----------------------------------
     {
         path: "/vendedor/listar",
         component: ListarVendedor
@@ -29,7 +35,7 @@ const routes = [
         component: Atualizar
     },
 
-
+//-----------------------------------
     {
         path: "/cliente/listar",
         component: ListarCliente
@@ -42,6 +48,23 @@ const routes = [
         path: "/cliente/:id",
         component: AtualizarCliente
     }
+
+//-----------------------------------
+    ,{
+        path: "/servico/listar",
+        component: ListarServico
+    },
+    {
+        path: "/servico/cadastrar",
+        component: CadastrarServico
+    },
+    {
+        path: "/servico/:id",
+        component: AtualizarServico
+    }
+
+
+
 
 ];
 const router = createRouter({

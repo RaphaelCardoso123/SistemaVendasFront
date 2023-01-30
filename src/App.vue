@@ -25,10 +25,20 @@
       </button>
       <div class="dropdown-content">
         <router-link to="/cliente/listar">Listar</router-link>
-        <a href="#">Link 2</a>
-        <a href="#">Link 3</a>
       </div>
   </div>
+
+
+
+  <div class="dropdown">
+      <button class="dropbtn">Servico
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <router-link to="/servico/listar">Listar</router-link>
+      </div>
+  </div>
+
 
 <router-view />
 
