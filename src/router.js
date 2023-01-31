@@ -67,6 +67,14 @@ const routes = [
     {
         path: "/itemPedido/listar",
         component: ()=> import( "./components/itemPedido/Listar.vue")
+    },
+    {
+        path: "/itemPedido/cadastrar",
+        component: ()=> import( "./components/itemPedido/Cadastrar.vue")
+    },
+    {
+        path: "/itemPedido/:id",
+        component: ()=> import( "./components/itemPedido/Atualizar.vue")
     }
 
 

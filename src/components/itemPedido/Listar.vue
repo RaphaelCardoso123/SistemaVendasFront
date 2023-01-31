@@ -14,9 +14,10 @@
             </thead>
             <tbody>
                <tr v-for="(itemPedido, index) in itensPedido" :key="index">
-                    <td>{{ itemPedido. id }}</td>
-                    <td>{{ itemPedido. nome }}</td>
-                    <td>{{ itemPedido. login }}</td>
+                    <td>{{ itemPedido. pedidoId }}</td>
+                    <td>{{ itemPedido. servicoId }}</td>
+                    <td>{{ itemPedido. quantidade }}</td>
+                    <td>{{ itemPedido. valor }}</td>
                     <td>
                         <button class="btn btn-success" @click="editarItemPedido(itemPedido.id)">Editar</button>
                         <button class="btn btn-danger" @click="excluirItemPedido(itemPedido)">Excluir</button>
