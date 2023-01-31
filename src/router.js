@@ -41,19 +41,20 @@ const routes = [
     },
 
 
-// //começo pedido
-//     ,{
-//         path: "/pedido/listar",
-//         component: ListarPedido
-//     },
-//     {
-//         path: "/pedido/cadastrar",
-//         component: CadastrarPedido
-//     },
-//     {
-//         path: "/pedido/:id",
-//         component: AtualizarPedido
-//     }
+
+    {
+        path: "/pedido/listar",
+        component: ()=> import( "./components/pedido/Listar.vue")
+    },
+    {
+        path: "/pedido/cadastrar",
+        component: ()=> import( "./components/pedido/Cadastrar.vue")
+    },
+    {
+        path: "/pedido/:id",
+        component: ()=> import( "./components/pedido/Atualizar.vue")
+    },
+
     //,{
     //    path: " ",
     //    component: ListarPedidosVendedores
