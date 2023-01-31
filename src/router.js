@@ -27,6 +27,18 @@ const routes = [
         path: "/cliente/:id",
         component: ()=> import( "./components/cliente/Atualizar.vue")
     },
+    {
+        path: "/servico/listar",
+        component: ()=> import( "./components/servico/Listar.vue")
+    },
+    {
+        path: "/servico/cadastrar",
+        component: ()=> import( "./components/servico/Cadastrar.vue")
+    },
+    {
+        path: "/servico/:id",
+        component: ()=> import( "./components/servico/Atualizar.vue")
+    },
 
 
 //     {
