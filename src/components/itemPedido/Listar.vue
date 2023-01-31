@@ -10,10 +10,12 @@
                     <th scope="col">ServicoId</th>
                     <th scope="col">Quantidade</th>
                     <th scope="col">Valor</th>
+                    <th scope="col">Ação</th>
                 </tr>
             </thead>
             <tbody>
                <tr v-for="(itemPedido, index) in itensPedido" :key="index">
+                    <td>{{ itemPedido. id }}</td>
                     <td>{{ itemPedido. pedidoId }}</td>
                     <td>{{ itemPedido. servicoId }}</td>
                     <td>{{ itemPedido. quantidade }}</td>
