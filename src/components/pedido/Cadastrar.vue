@@ -27,7 +27,7 @@ export default {
         return {
             pedido: {
                 data: '',
-                vendedorId: '', //vendedorId/clienteId em minúsculo está correto assim?
+                vendedorId: '',
                 clienteId: ''
             }
         }
@@ -36,7 +36,7 @@ export default {
         cadastrarPedido() {
             var data = { //DATA não vai dar comflito com palavra reservada?
                 data: this.pedido.data,
-                vendedorId: this.pedido.vendedorId, //vendedorId/clienteId em minúsculo está correto assim?
+                vendedorId: this.pedido.vendedorId, 
                 clienteId: this.pedido.clienteId
             };
 

@@ -15,6 +15,7 @@ const routes = [
         path: "/vendedor/:id",
         component: ()=> import( "./components/vendedor/Atualizar.vue")
     },
+
     {
         path: "/cliente/listar",
         component: ()=> import( "./components/cliente/Listar.vue")
@@ -27,6 +28,7 @@ const routes = [
         path: "/cliente/:id",
         component: ()=> import( "./components/cliente/Atualizar.vue")
     },
+    
     {
         path: "/servico/listar",
         component: ()=> import( "./components/servico/Listar.vue")
@@ -39,8 +41,6 @@ const routes = [
         path: "/servico/:id",
         component: ()=> import( "./components/servico/Atualizar.vue")
     },
-
-
 
     {
         path: "/pedido/listar",
