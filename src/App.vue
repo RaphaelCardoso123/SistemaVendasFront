@@ -58,7 +58,7 @@
             </ul>
           </div>
         </li>
-        <!-- Serviço -->
+        <!-- Pedido -->
         <li class="nav-item">
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
@@ -70,6 +70,23 @@
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   <router-link class="dropdown-item" to="/pedido/listar">Listar</router-link>
                   <router-link class="dropdown-item" to="/pedido/cadastrar">Cadastrar</router-link>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <!-- ItemPedido -->
+        <li class="nav-item">
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  ItemPedido
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <router-link class="dropdown-item" to="/itemPedido/listar">Listar</router-link>
+                  <router-link class="dropdown-item" to="/itemPedido/cadastrar">Cadastrar</router-link>
                 </div>
               </li>
             </ul>
