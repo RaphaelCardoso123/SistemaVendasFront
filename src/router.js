@@ -41,19 +41,6 @@ const routes = [
     },
 
 
-//     {
-//         path: "/servico/listar",
-//         component: ListarServico
-//     },
-//     {
-//         path: "/servico/cadastrar",
-//         component: CadastrarServico
-//     },
-//     {
-//         path: "/servico/:id",
-//         component: AtualizarServico
-//     }
-
 // //começo pedido
 //     ,{
 //         path: "/pedido/listar",
