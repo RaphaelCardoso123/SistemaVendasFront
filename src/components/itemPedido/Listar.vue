@@ -10,7 +10,7 @@
                     <th scope="col">ServicoId</th>
                     <th scope="col">Quantidade</th>
                     <th scope="col">Valor</th>
-                    <th scope="col">Ação</th>
+                    <th scope="col">Ações</th>
                 </tr>
             </thead>
             <tbody>

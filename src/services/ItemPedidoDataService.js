@@ -5,11 +5,11 @@ class ItemPedidoDataService {
     cadastrar(itemPedido) {      //CADASTRAR
         return http.post('/itemPedido', itemPedido);
     }
-    /*
+    
     obterPorId(id) {           //CONSULTAR
-        return http.get(`/vendedor/${id}`)
+        return http.get(`/itemPedido/${id}`)
     }
-    */
+    
     atualizar(id, itemPedido) {  //ATUALIZAR    
         return http.put(`/itemPedido/${id}`, itemPedido);
     } 
