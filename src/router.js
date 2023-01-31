@@ -1,69 +1,71 @@
 import { createWebHistory, createRouter } from "vue-router";
-import TheWelcome from "./components/TheWelcome.vue";
-
-import ListarVendedor from "./components/vendedor/Listar.vue";
-import Cadastrar from "./components/vendedor/Cadastrar.vue";
-import Atualizar from "./components/vendedor/Atualizar.vue";
-
-import ListarCliente from "./components/cliente/Listar.vue";
-import CadastrarCliente from "./components/cliente/Cadastrar.vue";
-import AtualizarCliente from "./components/cliente/Atualizar.vue";
-
-import ListarServico from "./components/servico/Listar.vue";
-import CadastrarServico from "./components/servico/Cadastrar.vue";
-import AtualizarServico from "./components/servico/Atualizar.vue";
-
-
 
 const routes = [
-    {
-        path: "/",
-        component: TheWelcome
-    },
-
 
     {
         path: "/vendedor/listar",
-        component: ListarVendedor
+        component: ()=> import( "./components/vendedor/Listar.vue")
     },
     {
         path: "/vendedor/cadastrar",
-        component: Cadastrar
+        component: ()=> import( "./components/vendedor/Cadastrar.vue")
     },
+
     {
         path: "/vendedor/:id",
-        component: Atualizar
+        component: ()=> import( "./components/vendedor/Atualizar.vue")
     },
 
 
     {
         path: "/cliente/listar",
-        component: ListarCliente
+        component: ()=> import( "./components/cliente/Listar.vue")
     },
     {
         path: "/cliente/cadastrar",
-        component: CadastrarCliente
+        component: ()=> import( "./components/cliente/Cadastrar.vue")
     },
     {
         path: "/cliente/:id",
-        component: AtualizarCliente
+        component: ()=> import( "./components/cliente/Atualizar.vue")
     },
 
 
-    {
-        path: "/servico/listar",
-        component: ListarServico
-    },
-    {
-        path: "/servico/cadastrar",
-        component: CadastrarServico
-    },
-    {
-        path: "/servico/:id",
-        component: AtualizarServico
-    }
+//     {
+//         path: "/servico/listar",
+//         component: ListarServico
+//     },
+//     {
+//         path: "/servico/cadastrar",
+//         component: CadastrarServico
+//     },
+//     {
+//         path: "/servico/:id",
+//         component: AtualizarServico
+//     }
 
-
+// //começo pedido
+//     ,{
+//         path: "/pedido/listar",
+//         component: ListarPedido
+//     },
+//     {
+//         path: "/pedido/cadastrar",
+//         component: CadastrarPedido
+//     },
+//     {
+//         path: "/pedido/:id",
+//         component: AtualizarPedido
+//     }
+    //,{
+    //    path: " ",
+    //    component: ListarPedidosVendedores
+    //},
+    //{
+    //    path: " ",
+    //    component: ListarPedidosClientes
+    //}
+//fim pedido
 
 
 ];

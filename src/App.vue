@@ -4,135 +4,53 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 
 <template>
-  <div class="navbar">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <!-- Vendedor -->
+        <li class="nav-item">
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Vendedor
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <router-link class="dropdown-item" to="/vendedor/listar">Listar</router-link>
+                  <router-link class="dropdown-item" to="/vendedor/cadastrar">Cadastrar</router-link>
+                  <!--<router-link class="dropdown-item" to="/vendedor/atualizar">Atualizar</router-link>-->
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <!-- Cliente -->
+        <li class="nav-item">
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Cliente
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <router-link class="dropdown-item" to="/cliente/listar">Listar</router-link>
+                  <router-link class="dropdown-item" to="/cliente/cadastrar">Cadastrar</router-link>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
 
-    <div class="dropdown">
-      <button class="dropbtn">Vendedor
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <router-link to="/vendedor/listar">Listar</router-link>
-        <a href="#">Link 2</a>
-        <a href="#">Link 3</a>
+      
+      </ul>
       </div>
-    </div>
-  </div>
-
-
-  <div class="dropdown">
-      <button class="dropbtn">Cliente
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <router-link to="/cliente/listar">Listar</router-link>
-      </div>
-  </div>
-
-
-
-  <div class="dropdown">
-      <button class="dropbtn">Servico
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <router-link to="/servico/listar">Listar</router-link>
-      </div>
-  </div>
-
-
-<router-view />
+  </nav>
+  <router-view />
 
 </template>
 
 <style scoped>
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
 
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-}
-
-.navbar a {
-  float: left;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-.dropdown .dropbtn {
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
 </style>
