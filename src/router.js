@@ -15,8 +15,6 @@ const routes = [
         path: "/vendedor/:id",
         component: ()=> import( "./components/vendedor/Atualizar.vue")
     },
-
-
     {
         path: "/cliente/listar",
         component: ()=> import( "./components/cliente/Listar.vue")
