@@ -4,6 +4,10 @@
         <hr/>
         <div class="col-4">
             <div>
+                <label class="form-label">Id</label>
+                <input type="text" disabled v-model="itemPedido.id" class="form-control" placeholder="Id">
+            </div>
+            <div>
                 <label class="form-label">PedidoId</label>
                 <input type="text" disabled v-model="itemPedido.pedidoId" class="form-control" placeholder="PedidoId">
             </div>
