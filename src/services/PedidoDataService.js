@@ -22,15 +22,6 @@ class PedidoDataService {
         return http.get ('/pedido/listar');
     }
 
-    /*
-    obterPorClienteId(id) {           //CONSULTAR
-        return http.get(` `)
-    }
-
-    obterPorVendedorId(id) {           //CONSULTAR
-        return http.get(` `)
-    }
-    */
 }
 
 export default new PedidoDataService();

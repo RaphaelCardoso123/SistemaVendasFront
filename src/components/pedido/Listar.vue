@@ -16,8 +16,8 @@
             <tbody>
                <tr v-for="(pedido, index) in pedidos" :key="index">
                     <td>{{ pedido. id }}</td>
-                    <td>{{ pedido. data }}</td> <!--DATA não vai dar comflito com palavra reservada?-->
-                    <td>{{ pedido. vendedorId }}</td><!--vendedorId/clienteId em minúsculo está correto assim?-->
+                    <td>{{ pedido. data }}</td> 
+                    <td>{{ pedido. vendedorId }}</td>
                     <td>{{ pedido. clienteId }}</td>
                     <!--<td>{{ pedido. valorTotal }}</td>-->
                     <td>
@@ -50,7 +50,7 @@ export default {
             this.$router.push('/pedido/' + id);
         },
         async excluirPedido(pedido) {
-            if (confirm(`Tem certeza que deseja excluir o pedido ${pedido.id}?`)) { // ${pedido.nome} troquei NOME por ID pq pedido não tem nome
+            if (confirm(`Tem certeza que deseja excluir o pedido ${pedido.id}?`)) { 
                 await PedidoDataService.deletar(pedido.id);
                 this.obterPedidos();
             }
