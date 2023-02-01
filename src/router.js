@@ -54,16 +54,7 @@ const routes = [
         path: "/pedido/:id",
         component: ()=> import( "./components/pedido/Atualizar.vue")
     },
-    /*
-    ,{
-        path: " ",
-        component: ListarPedidosVendedores
-    },
-    {
-        path: " ",
-        component: ListarPedidosClientes
-    }
-    */
+ 
     {
         path: "/itemPedido/listar",
         component: ()=> import( "./components/itemPedido/Listar.vue")
