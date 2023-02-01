@@ -1,5 +1,5 @@
 <template>
-    <h3>NOVO ITEM Pedido</h3>
+    <h3>NOVO ITEM PEDIDO</h3>
     <div class="form" style="padding: 1%;">
         <hr/>
         <div class="col-4">
