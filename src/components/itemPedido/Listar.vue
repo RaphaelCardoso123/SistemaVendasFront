@@ -50,7 +50,7 @@ export default {
             this.$router.push('/itemPedido/' + id);
         },
         async excluirItemPedido(itemPedido) {
-            if (confirm(`Tem certeza que deseja excluir o item pedodo ${itemPedido.id}?`)) { //coloquei ID ao invés de nome ${itemPedido.id}
+            if (confirm(`Tem certeza que deseja excluir o item pedodo ${itemPedido.id}?`)) { 
                 await ItemPedidoDataService.deletar(itemPedido.id);
                 this.obterItensPedido();
             }

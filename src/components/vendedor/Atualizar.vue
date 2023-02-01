@@ -12,7 +12,7 @@
                 <input type="text" required v-model="vendedor.nome" class="form-control" placeholder="Nome">
             </div>
             <div>
-                <label class="form-label">Login</label><!--Tirei DISABLED para poder atualizar esse campo tmb-->
+                <label class="form-label">Login</label>
                 <input type="text" v-model="vendedor.login" class="form-control" placeholder="Login">
             </div>
             <div>

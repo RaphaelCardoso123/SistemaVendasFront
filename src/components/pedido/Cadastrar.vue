@@ -4,7 +4,7 @@
         <hr/>
         <div class="col-4">
             <div>
-                <label class="form-label">Data</label> <!--DATA não precisa puxar altomático?-->
+                <label class="form-label">Data</label> 
                 <input type="text" required v-model="pedido.data" class="form-control" placeholder="Data">
             </div>
             <div>
@@ -34,7 +34,7 @@ export default {
     },
     methods: {
         cadastrarPedido() {
-            var data = { //DATA não vai dar comflito com palavra reservada?
+            var data = { 
                 data: this.pedido.data,
                 vendedorId: this.pedido.vendedorId, 
                 clienteId: this.pedido.clienteId
